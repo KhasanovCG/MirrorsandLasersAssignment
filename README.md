@@ -41,8 +41,8 @@ First line: Four integers r,c,m,n where:
 - c: Number of columns in the grid.
 - m: Number of `/` mirrors.
 - n: Number of `\` mirrors.
-Next m lines: Two integers ri,ci specifying the position of a `/ `mirror.
-Next n lines: Two integers ri,ci specifying the position of a `\ `mirror.
+- Next m lines: Two integers ri,ci specifying the position of a `/ `mirror.
+- Next n lines: Two integers ri,ci specifying the position of a `\ `mirror.
 
 ### Output:
 Depending on the outcome, the program will output:
