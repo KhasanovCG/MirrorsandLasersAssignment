@@ -11,7 +11,7 @@ I am tasked with solving a problem involving a safe with a laser-based optical c
 - **1** if there is no possible way to make the laser exit.
 - The number of valid positions where a mirror could be placed to allow the laser to exit, along with the lexicographically smallest position.
 
-### Solution Overview
+### Solution Overview:
 The solution traces the path of the laser across the grid both forward (starting from the top-left) and backward (starting from the bottom-right). The idea is to find positions where placing a mirror would enable the laser to exit the grid. The intersection of possible mirror positions from both directions is then calculated to find the valid solutions.
 
 ### Key Concepts:
@@ -19,7 +19,7 @@ Laser Tracing- The laser's path is simulated based on the current direction and 
 Set Intersection- Potential mirror positions from forward and backward paths are compared to find valid spots.
 The solution is implemented in C++14, adhering to the AUTOSAR C++14 guidelines, ensuring clean, organized, and concise code.
 
-### Detailed Breakdown of Functions Used
+### Detailed Breakdown of Functions Used:
 1. `struct Point`:
 *Represents a coordinate in the grid.
 *Overloaded operators for comparison to help with sorting and equality checks.
@@ -31,7 +31,7 @@ The solution is implemented in C++14, adhering to the AUTOSAR C++14 guidelines, 
 *Calls `traceLaser` to trace the laser both forward and backward.
 *Computes the intersection of potential mirror positions and determines the final output.
 
-### How to Run the Program
+### How to Run the Program:
 We can compile the program using the following command:
 `g++ -std=c++14 -o laser_mirror_safe laser_mirror_safe.cpp`
 
